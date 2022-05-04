@@ -1,13 +1,11 @@
 //用来引入写好的
-import { effectWatch, reactive } from "./reactivity/4.reactivity.js";
-
+import { effectWatch, reactive } from "./reactivityCui/4.reactivity.js";
 
 const user = reactive({
   name: 30,
 });
 
 let double;
-
 
 effectWatch(() => {
   console.log("---reactive---");
